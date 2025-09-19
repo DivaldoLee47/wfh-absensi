@@ -157,7 +157,7 @@ export default function AdminDashboardPage() {
         {/* Total Employees Card */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Users</CardTitle>
+            <CardTitle className="text-sm font-medium">Total Employees</CardTitle>
             <UserCheck className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -165,7 +165,7 @@ export default function AdminDashboardPage() {
               {loadingStats ? <Loader2 className="h-6 w-6 animate-spin" /> : userStats?.employees || 0}
             </div>
             <p className="text-xs text-muted-foreground">
-              Registered users
+              Registered employees
             </p>
           </CardContent>
         </Card>
